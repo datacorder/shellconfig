@@ -1,0 +1,26 @@
+```
+set compatible
+color desert
+
+syntax on
+set showmatch       " Marcar matching brackets
+set smarttab        " Auto tabs
+set showcmd             " Show (partial) command in status line.
+set ignorecase          " Ignora case sensitive
+set smartcase           " Do smart case matching
+set incsearch           " Incremental search
+"#set cursorline
+
+" Utilizar vimrc global
+if filereadable("/etc/vim/vimrc.local")
+    source /etc/vim/vimrc.local
+endif
+
+" Mostrar info del archivo
+set ruler
+set laststatus=2
+hi CursorLine term=bold cterm=bold guibg=Grey40
+
+" Tab = 4 spaces
+set ts=4 sw=4
+```
