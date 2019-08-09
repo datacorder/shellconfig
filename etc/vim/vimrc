@@ -18,7 +18,6 @@ Plugin 'VundleVim/Vundle.vim'
 " Set Proper Tabs
 set tabstop=4
 set shiftwidth=4
-set smarttab
 set expandtab
 
 " Always display the status line
@@ -30,10 +29,13 @@ set cursorline
 " Plugins
 Plugin 'Yggdroot/indentLine'
 Plugin 'ayu-theme/ayu-vim'
-Plugin 'scrooloose/nerdcommenter'
 Plugin 'vim-airline/vim-airline'
-Plugin 'scrooloose/nerdtree'
 Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'robbles/logstash.vim'
+
+
+" Indent guides
+let g:indent_guides_enable_on_vim_startup = 1
 
 " Nerdtree config
 nmap <C-n> :NERDTreeToggle<CR>
